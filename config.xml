@@ -2,7 +2,7 @@
 	<map LonLat="0 0" Zoom="0">  
         <BaseLayers>
             <layer name="Streets" type="tiled" 
-                   url="http://localhost:8090/iserver/services/map-jingjin/rest/maps/¾©½òµØÇøÈË¿Ú·Ö²¼Í¼_×¨ÌâÍ¼"/>
+                   url="http://localhost:8090/iserver/services/map-jingjin/rest/maps/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿Ú·Ö²ï¿½Í¼_×¨ï¿½ï¿½Í¼"/>
 			<layer name="CloudLayer" type="cloud" />
         </BaseLayers>
         <Overlaps >
@@ -19,7 +19,7 @@
 		<title>Javascript BEV 1.0</title>
 		<logo>images/logo.png</logo>
 		
-		// ¸¡¶¯¹¦ÄÜÃæ°åÊôÐÔ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		<panel id="panel" top="50px",left="50px" config="./Model/Panel.html"  position="float" /> // position="fixed"
 	</layout>
 </config>
