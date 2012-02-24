@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>SuperMap Javascrpt Bev</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="./css/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+	<script src="./js/jquery-1.6.4.min.js"></script>
+	<script src="./js/jquery.mobile-1.0.1.min.js"></script>
+    <script src="./js/jquery.form.js"></script>
+    <script src="./js/interface.js"></script>
+    <script src="./js/common.js" ></script>
+
+    <script src="../libs/SuperMap.Include.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" >
+
+	<div data-role="header" id="header" >
+		
+	</div><!-- /header -->
+
+	<div data-role="content" id="content" >	
+		<div id="map" >
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" id="footer" >
+		<h4>版权所有© 1997-2011,北京超图软件股份有限公司 京ICP证020360号 京ICP备05002978号</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="layer1" class="mianban">
+                    <div id="layer1_handle" class="title"><h4>功能面板</h4></div>
+                    <input type="button" id="back"/>
+                    <input type="button" id="gongneng"/>
+    <div class="pailie">
+                        <a href="#" id="a"></a>
+                        <a href="#" id="b"></a>
+                        <a href="#" id="c"></a>
+                        <a href="#" id="d"></a>
+                        <a href="#" id="e"></a>
+                        <a href="#" id="f"></a>
+                        <a href="#" id="g"></a>
+                        <a href="#" id="h"></a>
+                        <a href="#" id="i"></a>
+                        <div class="clear"></div>
+                    </div>   
+                            
+</div>
+	  
+	  <script>
+
+        $(document).ready(function () {
+            adjustPage();
+
+            init();
+
+            $(window).resize(function () {
+                adjustPage();
+            });
+
+            $('#layer1').Draggable(
+					{
+					    zIndex: 1004,
+					    ghosting: false,
+					    opacity: 0.7,
+					    handle: '#layer1_handle'
+					}
+				);
+        });
+
+        function adjustPage() {
+            var nHeight = pageHeight();
+            $("#page").css("height", nHeight + 'px');
+        }
+
+        var map, layer;
+        function init() {
+            map = new SuperMap.Map("map", { controls: [
+                      new SuperMap.Control.ScaleLine(),
+                      new SuperMap.Control.PanZoom(),
+                      new SuperMap.Control.Navigation({
+                          dragPanOptions: {
+                              enableKinetic: true
+                          }
+                      })], units: "m"
+            });
+            layer = new SuperMap.Layer.CloudLayer();
+            map.addLayer(layer);
+            map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+        }
+
+    </script>
+</body>
+</html>

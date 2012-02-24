@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:#373737;
+    overflow:hidden;
+}
+
+#header 
+{
+    height:6%;
+    background: url("../images/frameimages/banner-logo.png") no-repeat #EEF7FF;
+    border:1px solid #7E9DBA;
+    min-height:48px;
+}
+
+#content 
+{
+    padding:0;
+    height:94%;
+}
+
+#map
+{
+    width:100%;
+    height:100%;
+}
+
+#footer 
+{
+    height:0%;
+    background: no-repeat #EEF7FF;
+    border:1px solid #7E9DBA;
+}
+
+.mianban{
+		margin-top:150px;
+		margin-left:300px;
+		background-color:#f1f8fe;
+		width:210px;
+		height:280px;
+		border-width:1px;
+		border-color:#a7bacb;
+		border-style:solid;
+		position:relative;
+		border-radius: 5px;
+		z-index:1004;
+	         }
+	.title{
+		background-color:#9ebfe2;
+		background-image:url("../images/frameimages/chilun.png");
+		background-repeat:no-repeat;
+		background-position: 45px 7px;
+		margin:4px;
+		height:40px;
+		text-align:center;
+		border-radius: 3px;
+		color: #406180;
+	      }
+
+		.title h4 {
+		    margin:0;
+			padding-top: 11px;
+			padding-left: 17px;
+		}
+	.mianban .pailie{
+			margin:4px;
+			background-color:#ffffff;
+			position:relative;
+			border: 1px solid #d3e4f3;
+			border-radius: 3px;
+		       }
+		
+		
+		.pailie a {
+		    display: block;
+			width: 46px;
+			height: 46px;
+			margin: 10px;
+			float: left;
+			border: 0 none;
+		}
+		#a {
+		    background: url("../images/frameimages/01.png") no-repeat;
+		}
+		#b {
+		    background: url("../images/frameimages/02.png") no-repeat;
+		}
+		#c {
+		    background: url("../images/frameimages/03.png") no-repeat;
+		}
+		#d {
+		    background: url("../images/frameimages/04.png") no-repeat;
+		}
+		#e {
+		    background: url("../images/frameimages/05.png") no-repeat;
+		}
+		#f {
+		    background: url("../images/frameimages/06.png") no-repeat;
+		}
+		#g {
+		    background: url("../images/frameimages/07.png") no-repeat;
+		}
+		#h {
+		    background: url("../images/frameimages/08.png") no-repeat;
+		}
+		#i {
+		    background: url("../images/frameimages/09.png") no-repeat;
+		}
+
+	  .clear {
+			     clear: left;
+				 height: 27px;
+			 }
+	#back, #gongneng {
+	    position: absolute;
+		border: 0 none;
+		width: 27px;
+		height: 40px;
+		top: 4px;
+		cursor:pointer;
+	}
+	#back {
+	    
+		left:4px;
+		background-image:url("../images/frameimages/houtui.png");
+	}
+#gongneng {
+    right: 4px;
+	
+	background-image:url("../images/frameimages/gongneng.png");
+}
+
+#layer1_handle 
+		{
+			background-color:#5588bb;
+			padding:2px;
+			text-align:center;
+			font-weight:bold;
+			color: #FFFFFF;
+			vertical-align:middle;
+		}
+		
+		#layer1 
+		{
+			position: absolute;
+			left:200px;
+			top:100px;
+			width:250px;
+			background-color:#f0f5FF;
+			border: 1px solid #FF0000;
+			z-index: 1004;
+		}
