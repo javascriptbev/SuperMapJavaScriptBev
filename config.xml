@@ -2,7 +2,7 @@
 	<map LonLat="0 0" Zoom="0">  
         <BaseLayers>
             <layer name="Streets" type="tiled" 
-                   url="http://localhost:8090/iserver/services/map-jingjin/rest/maps/���������˿ڷֲ�ͼ_ר��ͼ"/>
+                   url="http://localhost:8090/iserver/services/map-jingjin/rest/maps/京津地区人口分布图_专题图"/>
 			<layer name="CloudLayer" type="cloud" />
         </BaseLayers>
         <Overlaps >
@@ -19,7 +19,7 @@
 		<title>Javascript BEV 1.0</title>
 		<logo>images/logo.png</logo>
 		
-		// ����������������
+		// 浮动功能面板属性
 		<panel id="panel" top="50px",left="50px" config="./Model/Panel.html"  position="float" /> // position="fixed"
 	</layout>
 </config>
